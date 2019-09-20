@@ -1,0 +1,38 @@
+#ifndef BARRERECTANGLE_H
+#define BARRERECTANGLE_H
+#include "barre.h"
+
+/**
+ * @brief The BarreRectangle class
+ */
+class BarreRectangle : public Barre {
+
+public:
+    /**
+     * @brief BarreRectangle
+     * @param _nom
+     * @param _reference
+     * @param _longueur
+     * @param _largeur
+     * @param _taille
+     */
+    BarreRectangle(const string _nom, const string _reference, const int _longueur, const int _largeur, const int _taille = 250);
+    /**
+     * @brief AfficherCaracteristiques
+     */
+    void AfficherCaracteristiques();
+    /**
+     * @brief CalculerSection
+     * @return 
+     */
+    double CalculerSection();
+
+private:
+    /**
+     * @brief longueur
+     */
+    int longueur;
+    int largeur;
+
+};
+#endif // BARRERECTANGLE_H

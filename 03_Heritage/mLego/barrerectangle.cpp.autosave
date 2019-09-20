@@ -1,0 +1,35 @@
+#include "barrerectangle.h"
+#include <iostream>
+using namespace std;
+/**
+ * @brief BarreRectangle::BarreRectangle
+ * @param _nom
+ * @param _reference
+ * @param _longueur
+ * @param _largeur
+ * @param _taille
+ */
+BarreRectangle::BarreRectangle(const string _nom, const string _reference, const int _longueur, const int _largeur, const int _taille):
+    /**
+         * @brief Barre
+         */
+    Barre(_nom,_reference,_taille), longueur(_longueur), largeur(_largeur){
+}
+/**
+ * @brief BarreRectangle::CalculerSection
+ * @return 
+ */
+double BarreRectangle::CalculerSection(){
+    double retour;
+    retour = longueur * largeur;
+    return retour;
+}
+/**
+ * @brief BarreRectangle::AfficherCaracteristiques
+ */
+void BarreRectangle::AfficherCaracteristiques(){
+    Barre::AfficherCaracteristiques();
+    cout << "Longueur : " << longueur << endl << "Largeur : " << largeur << endl;
+}
+
+

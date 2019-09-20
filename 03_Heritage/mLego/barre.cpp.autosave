@@ -1,0 +1,31 @@
+#include "barre.h"
+using namespace std;
+
+/**
+ * @brief Barre::Barre
+ * @param _nom
+ * @param _reference
+ * @param _taille
+ */
+Barre::Barre(const string _nom, const string _reference, const int _taille) : nom(_nom), reference(_reference), taille(_taille) {
+}
+
+/**
+ * @brief Barre::Barre
+ * @param orig
+ */
+Barre::Barre(const Barre& orig) {
+}
+
+/**
+ * @brief Barre::~Barre
+ */
+Barre::~Barre() {
+}
+
+/**
+ * @brief Barre::AfficherCaracteristiques
+ */
+void Barre::AfficherCaracteristiques(){
+    cout << "Nom : " << nom << endl << "Reference : " << reference << endl << "Taille : " << taille << endl;
+}

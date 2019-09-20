@@ -1,0 +1,35 @@
+#ifndef BARRECARREE_H
+#define BARRECARREE_H
+#include "barre.h"
+
+class BarreCarre : public Barre {
+
+public:
+    /**
+     * @brief BarreCarre
+     * @param _nom
+     * @param _reference
+     * @param _cote
+     * @param _taille
+     */
+    BarreCarre(const string _nom, const string _reference, const int _cote, const int _taille = 250);
+    /**
+     * @brief AfficherCaracteristiques
+     */
+    void AfficherCaracteristiques();
+    /**
+     * @brief CalculerSection
+     * @return 
+     */
+    double CalculerSection();
+
+private:
+    /**
+     * @brief cote
+     */
+    int cote;
+
+};
+
+
+#endif // BARRECARREE_H

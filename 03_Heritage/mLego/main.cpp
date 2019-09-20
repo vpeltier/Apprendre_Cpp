@@ -1,0 +1,38 @@
+#include <iostream>
+#include "barre.h"
+#include "barreronde.h"
+#include "barrecarree.h"
+#include "barrerectangle.h"
+
+using namespace std;
+
+int main()
+{
+
+    /*Barre Carree*/
+    BarreCarre maBarre3("Barre carree", "BR.CARRE", 10, 200);
+    double sectionBarreCarre;
+    maBarre3.AfficherCaracteristiques();
+    sectionBarreCarre = maBarre3.CalculerSection();
+    cout << "Section : " << sectionBarreCarre << endl;
+
+    cout << endl;
+
+    /* Barre Rectangle  */
+        BarreRectangle maBarre2("Barre rectangle", "BR.RCTL", 10, 5, 300);
+        double sectionBarreRectangle;
+        maBarre2.AfficherCaracteristiques();
+        sectionBarreRectangle = maBarre2.CalculerSection();
+        cout << "Section : " << sectionBarreRectangle << endl;
+
+    cout << endl;
+
+    /*Barre Ronde*/
+        BarreRonde maBarre("Barre ronde", "BR.RDE", 10);
+        double sectionBarreRonde;
+        maBarre.AfficherCaracteristiques();
+        sectionBarreRonde = maBarre.CalculerSection();
+        cout << "Section : " << sectionBarreRonde << endl;
+
+    return 0;
+}

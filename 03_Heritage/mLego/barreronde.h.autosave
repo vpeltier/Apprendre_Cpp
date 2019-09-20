@@ -1,0 +1,35 @@
+#ifndef BARRERONDE_H
+#define BARRERONDE_H
+#include "barre.h"
+using namespace std;
+
+class BarreRonde : public Barre {
+
+public:
+    /**
+     * @brief BarreRonde
+     * @param _nom
+     * @param _reference
+     * @param _diametre
+     * @param _taille
+     */
+    BarreRonde(const string _nom, const string _reference, const int _diametre, const int _taille = 250);
+    /**
+     * @brief AfficherCaracteristiques
+     */
+    void AfficherCaracteristiques();
+    /**
+     * @brief CalculerSection
+     * @return 
+     */
+    double CalculerSection();
+
+private:
+    /**
+     * @brief diametre
+     */
+    int diametre;
+};
+
+
+#endif // BARRERONDE_H

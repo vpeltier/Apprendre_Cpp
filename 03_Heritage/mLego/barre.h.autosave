@@ -1,0 +1,54 @@
+#ifndef BARRE_H
+#define BARRE_H
+
+#include <string>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+/**
+ * @brief The Barre class
+ */
+class Barre {
+
+public:
+    /**
+     * @brief Barre
+     * @param _nom
+     * @param _reference
+     * @param _taille
+     */
+    Barre(const string _nom, const string _reference, const int _taille = 250);
+    /**
+     * @brief Barre
+     * @param orig
+     */
+    Barre(const Barre& orig);
+    /**
+     * @brief ~Barre
+     */
+    virtual ~Barre();
+    /**
+     * @brief AfficherCaracteristiques
+     */
+    void AfficherCaracteristiques();
+
+protected:
+    /**
+     * @brief nom
+     */
+    string nom;
+    /**
+     * @brief reference
+     */
+    string reference;
+    /**
+     * @brief taille
+     */
+    int taille;
+
+};
+
+
+
+#endif // BARRE_H
