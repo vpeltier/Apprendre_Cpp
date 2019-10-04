@@ -1,5 +1,6 @@
 # Les comptes bancaires
 
-## diragrame de classe
+## diagramme de classe
 
-![Modelio.png](/03_Heritage/Controle_Heritage)
+![Les comptes bancaires](/03_Heritage/Controle_Heritage/Modelio.png)
+
