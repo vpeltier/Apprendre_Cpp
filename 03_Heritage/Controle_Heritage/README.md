@@ -2,4 +2,4 @@
 
 ## diragrame de classe
 
-![Modelio.png]Apprendre_Cpp/03_Heritage/Controle_Heritage/README.md
+![Modelio.png](/03_Heritage/Controle_Heritage)
