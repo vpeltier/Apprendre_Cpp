@@ -18,8 +18,7 @@ bool Trajectoire::Ajouter(Element *pElement)
 {
     bool retour = true;
     if(prochaineEtape < nbEtapesMax){
-        lesEtapes[prochaineEtape++] = pElement;
-        pElement->setNumero(prochaineEtape);
+        //lesEtapes[prochaineEtape++] = pElement;
     }else{
         retour = false;
     }
@@ -32,10 +31,5 @@ void Trajectoire::Afficher()
     for (int indice = 0; indice <nbEtapesMax; indice++){
             lesEtapes[indice]->Afficher();
     }
-    cout << endl;
-    cout << "Durée totale du parcours = " << endl;
-    cout << "Longueur totale totale du parcours = " << endl << endl;
-
-    cout << "Vecteur de départ = (" << depart.getX() << "," << depart.getY() << ")" << endl;
-    cout << "Vecteur d'arrivée = (" << "" << "," << "" << ")" << endl;
+/*a completer*/
 }
